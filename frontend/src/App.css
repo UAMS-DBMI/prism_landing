@@ -1,0 +1,84 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.App-header {
+  background-color: #152340;
+  color: white;
+  font-family: serif;
+  padding: 1rem;
+}
+
+.App-logo {
+  height: 4em;
+}
+
+.App-link {
+  color: #6dbbd0;
+  text-decoration: none;
+}
+
+.frontpage-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.front-top-container{
+  display: flex;
+}
+
+.search-area {
+  padding: 1em;
+  border: 1px #3a4c7114 solid;
+  flex-basis: 60em;
+}
+
+.search-area input {
+  height: 2em;
+  width: 100%;
+}
+
+.link-area {
+  display:  flex;
+  flex-wrap:  wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.description-area {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e6ebf4;
+  align-self: flex-end;
+}
+
+.description-block {
+  flex-grow: 1;
+  flex-basis: 10em;
+  margin: 1rem;
+}
+
+.undecorated-list {
+  list-style: none;
+}
+
+.example-search-text {
+  color: #646464;
+  padding-left: 2rem;
+}
+
+.collection-search-text {
+  color: #887116;
+}
+
+.clinical-search-text {
+  color: #881616;
+}
+
+.curated-search-text {
+  color: #2f1688; 
+}
