@@ -11,6 +11,7 @@ import { CollectionTable } from './CollectionTable';
 import Collection from './Collection';
 import CSVTable from './CSVTable';
 import CohortBuilder from 'cohort-builder';
+import 'cohort-builder/CohortBuilder.css';
 
 function App() {
   return (
