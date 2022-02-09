@@ -7,8 +7,10 @@ import {
 import './App.css';
 import PrismLogo from './img/prism_logo.png';
 import Home from './Home';
-import Beam from './beam/Beam';
 import { CollectionTable } from './CollectionTable';
+import Collection from './Collection';
+import CSVTable from './CSVTable';
+import CohortBuilder from 'cohort-builder';
 
 function App() {
   return (
@@ -19,11 +21,17 @@ function App() {
           <h3>An alternative view of <a className="App-link" href="https://www.cancerimagingarchive.net/">The Cancer Imaging Archive</a></h3>
         </header>
         <Switch>
+          <Route path="/test">
+            <CSVTable file="/csvs/nationwidechildrens.csv" />
+          </Route>
+          <Route path="/collections/:id">
+            <Collection />
+          </Route>
           <Route path="/collections">
             <CollectionTable />
           </Route>
           <Route path="/beam">
-            <Beam />
+            <CohortBuilder />
           </Route>
           <Route path="/">
             <Home />

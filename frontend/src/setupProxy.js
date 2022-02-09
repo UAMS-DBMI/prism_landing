@@ -4,7 +4,7 @@ module.exports = function(app) {
   app.use(
     '/api',
     createProxyMiddleware({
-      target: 'http://localhost:8000/',
+      target: 'http://sui-demo-prism.apps.dbmi.cloud/api',
       pathRewrite: { '^/api': '' },
       changeOrigin: true,
     })

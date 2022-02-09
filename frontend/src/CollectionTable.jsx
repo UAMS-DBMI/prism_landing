@@ -1,6 +1,6 @@
 export function CollectionTable() {
   return (
-<table id="tablepress-9" class="tablepress tablepress-id-9 table table-striped table-responsive dt-responsive">
+<table id="tablepress-9">
 <thead>
 <tr class="row-1 odd">
 <th class="column-1">Collection</th><th class="column-2"><nobr>Cancer Type</nobr></th><th class="column-3">Location</th><th class="column-4">Species</th><th class="column-5">Subjects</th><th class="column-6"><nobr>Image Types</nobr></th><th class="column-7"><nobr>Supporting Data</nobr></th><th class="column-8">Access</th><th class="column-9">Status</th><th class="column-10">Updated</th>

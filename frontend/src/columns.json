@@ -1,0 +1,449 @@
+[
+   {
+      "desc" : "Type of cancer with which the patient has been diagnosed (e.g. invasive ductal carcinoma, invasive lobular carcinoma, LSCC, LUAD) but diagnosis method unspecified",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "tumor_code"
+   },
+   {
+      "desc" : "Unique patient identifier",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "case_id"
+   },
+   {
+      "desc" : "Text designations that identify gender. Gender is described as the assemblage of properties that distinguish people on the basis of their societal roles. [Explanatory Comment 1: Identification of gender is based upon self-report and may come from a form, questionnaire, interview, etc.]",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "gender"
+   },
+   {
+      "desc" : "Patient's age at time of study",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "age"
+   },
+   {
+      "desc" : "The height of the patient, often measured in centimeters.",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "height_in_cm"
+   },
+   {
+      "desc" : "The weight of the patient, often measured in kilograms.",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "weight_in_kg"
+   },
+   {
+      "desc" : "Patient's body mass index",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "BMI"
+   },
+   {
+      "desc" : "Text for reporting information about race based on the Office of Management and Budget (OMB) categories.",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "race"
+   },
+   {
+      "desc" : "Text term that describes the anatomic site of the tumor or disease.",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "tumor_site"
+   },
+   {
+      "desc" : "Text term for the structural pattern of cancer cells used to define a microscopic diagnosis.",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "histologic_type"
+   },
+   {
+      "desc" : "Value to express the degree of abnormality of cancer cells, a measure of differentiation and aggressiveness. Generally expressed in the following classifications: High, Intermediate, Low, N/A; G1 (well differentiated), G2 (moderately differentiated), G3 (poorly differentiated), GX (grade cannot be assessed); I, II, III, IV, --; 1, 2, 3, 4, Not Available",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "histologic_grade"
+   },
+   {
+      "desc" : "The extent of a cancer, especially whether the disease has spread from the original site to other parts of the body based on AJCC staging criteria and determined by pathology. Generally 0-IV, may also include A/B/C and is an aggregate of the TNM stages",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "tumor_stage_pathological"
+   },
+   {
+      "desc" : "The version or edition of the American Joint Committee on Cancer Staging Handbooks, a publication by the group formed for the purpose of developing a system of staging for cancer that is acceptable to the American medical profession and is compatible with other accepted classifications, that was used to stage the patient's cancer.",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "AJCC_or_TNM_cancer_staging_edition"
+   },
+   {
+      "desc" : "Code of pathological T (primary tumor) to define the size or contiguous extension of the primary tumor (T), using staging criteria from the American Joint Committee on Cancer (AJCC). T followed by X, is, 0-4. ",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "pathologic_staging_primary_tumor_pT"
+   },
+   {
+      "desc" : "Codes that represent the stage of cancer based on the nodes present (N stage) according to criteria based on multiple editions of the AJCC's Cancer Staging Manual. N followed by X or 0-3",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "pathologic_staging_regional_lymph_nodes_pN"
+   },
+   {
+      "desc" : "Extent of the distant metastasis for the cancer based on evidence obtained from clinical assessment parameters determined prior to treatment.",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "clinical_staging_distant_metastasis_cM"
+   },
+   {
+      "desc" : "Code to represent the defined absence or presence of distant spread or metastases (M) to locations via vascular channels or lymphatics beyond the regional lymph nodes, using criteria established by the American Joint Committee on Cancer (AJCC).",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "pathologic_staging_distant_metastasis_pM"
+   },
+   {
+      "desc" : "Whether the patient is dead or alive at 12 month follow-up",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "vital_status_at_12months_follow_up"
+   },
+   {
+      "desc" : "Text terms to describe the status of a tissue margin following surgical resection. Often described by (R) classification: RX, no data/cannot be assessed; R0, no residual tumor; R1, microscopic residual tumor; R2, macroscopic residual tumor. Residual tumor may be found in the area of primary tumor and its regional lymph nodes and/or at distant sites.",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "residual_tumor"
+   },
+   {
+      "desc" : "Identifier for a biological specimen",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "specimens__specimen_id"
+   },
+   {
+      "desc" : "Type of specimen sample (e.g. blood, tumor, \"normal\") ",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "specimens__tissue_type"
+   },
+   {
+      "desc" : "The largest dimension of the tumor at diagnosis.",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "tumor_size_in_cm"
+   },
+   {
+      "desc" : "The patient's alcohol use (e.g. Lifelong non-drinker; Consumed alcohol in the past, but currently a non-drinker; Alcohol consumption equal to or less than 2 drinks per day for men and 1 drink or less per day for women; Alcohol consumption more than 2 drinks per day for men and more than 1 drink per day for women; Alcohol consumption history not available; <10 drinks per week = light; 10-20 drinks per week = Moderate; >20 drinks per week = heavy; ex-drinker, non-drinker, unknown; no, social, significant)",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "alcohol_consumption"
+   },
+   {
+      "desc" : "Category describing current smoking status and smoking history as self-reported by a patient.",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "tobacco_smoking_history"
+   },
+   {
+      "desc" : "Date and time the data was added",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "inserted"
+   },
+   {
+      "desc" : "Date and time the data was updated",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "updated"
+   },
+   {
+      "desc" : "Number of days from the date of diagnosis or beginning of the study to the 12 month follow-up or death",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "days_from_initial_diagnosis_to_last_contact_at_12months_follow_up"
+   },
+   {
+      "desc" : "Whether the patient had a tumor, was tumor-free, or tumor status unknown at 12 month follow-up",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "tumor_status_at_12months_follow_up"
+   },
+   {
+      "desc" : "Identifier for a slide holding a sample of a specimen",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "specimens__slide_id"
+   },
+   {
+      "desc" : "Percentage of the specimen's surface area that is tumor",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "specimens__percent_tumor_surface_area"
+   },
+   {
+      "desc" : "Percentage of the specimen that is the tumor nuclei",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "specimens__percent_tumor_nuclei"
+   },
+   {
+      "desc" : "Percentage of the specimen's surface area that is necrotic",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "specimens__percent_necrotic_surface_area"
+   },
+   {
+      "desc" : "Weight of tissue specimen (often in mg)",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "specimens__weight_in_mg"
+   },
+   {
+      "desc" : "Whether the patient is dead or alive at 24 month follow-up",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "vital_status_at_24months_follow_up"
+   },
+   {
+      "desc" : "Numeric computed value to represent lifetime tobacco exposure defined as number of cigarettes smoked per day x number of years smoked divided by 20.",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "number_of_pack_years_smoked"
+   },
+   {
+      "desc" : "Number of years that men consumed more than 2 drinks per day or women consumed more than 1 drink per day",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "number_of_years_consumed_more_than_2_drinks_per_day_for_men_or_more_than_1_for_women"
+   },
+   {
+      "desc" : "Number of days from the date of diagnosis or beginning of the study to the 24 month follow-up or death",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "days_from_initial_diagnosis_to_last_contact_at_24months_follow_up"
+   },
+   {
+      "desc" : "Whether the patient had a tumor, was tumor-free, or tumor status unknown at 24 month follow-up",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "tumor_status_at_24months_follow_up"
+   },
+   {
+      "desc" : "Text terms to capture the cause of death for a patient.",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "cause_of_death_at_12months_follow_up"
+   },
+   {
+      "desc" : "Text to describe a tumor's histologic subtype or mixed diagnosis that is different from previously specified options.",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "histologic_type_other"
+   },
+   {
+      "desc" : "Whether the patient is dead or alive at 36 month follow-up",
+      "files" : [
+         "CPTAC-HNSCC.csv"
+      ],
+      "label" : "vital_status_at_36months_follow_up"
+   },
+   {
+      "desc" : "Number of days from the date of diagnosis or beginning of the study to the 36 month follow-up or death",
+      "files" : [
+         "CPTAC-HNSCC.csv"
+      ],
+      "label" : "days_from_initial_diagnosis_to_last_contact_at_36months_follow_up"
+   },
+   {
+      "desc" : "Whether the patient had a tumor, was tumor-free, or tumor status unknown at 36 month follow-up",
+      "files" : [
+         "CPTAC-HNSCC.csv"
+      ],
+      "label" : "tumor_status_at_36months_follow_up"
+   },
+   {
+      "desc" : "Text terms to capture the cause of death for a patient.",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "cause_of_death_at_24months_follow_up"
+   },
+   {
+      "desc" : "Text term for reporting information about ethnicity based on the Office of Management and Budget (OMB) categories.",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "ethnicity"
+   },
+   {
+      "desc" : "Text term that describes the anatomic site of the tumor or disease.",
+      "files" : [
+         "CPTAC-HNSCC.csv",
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "tumor_site_other"
+   },
+   {
+      "desc" : "Yes/no indicating if the patient has had a locoregional recurrence of the tumor by the 12 month follow-up",
+      "files" : [
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "locoregional_recurrence_tumor_at_12months_follow_up"
+   },
+   {
+      "desc" : "Time interval from a person's date of death to the date of initial pathologic diagnosis, represented as a calculated number of days.",
+      "files" : [
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "days_from_initial_pathologic_diagnosis_to_death_at_12months_follow_up"
+   },
+   {
+      "desc" : "Time interval from a person's date of death to the date of initial pathologic diagnosis, represented as a calculated number of days.",
+      "files" : [
+         "CPTAC-LSCC.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "days_from_initial_pathologic_diagnosis_to_death_at_24months_follow_up"
+   },
+   {
+      "desc" : "Type of specimen sample (e.g. blood, tumor, \"normal\") ",
+      "files" : [
+         "CPTAC-LUAD.csv",
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "discovery_study"
+   },
+   {
+      "desc" : "Yes/no indicating if the patient has had a locoregional recurrence of the tumor by the 24 month follow-up",
+      "files" : [
+         "CPTAC-LUAD.csv"
+      ],
+      "label" : "locoregional_recurrence_tumor_at_24months_follow_up"
+   }
+]

@@ -22,9 +22,9 @@ function Home() {
 
         <div className="link-area">
           <BigButton icon='folder' link="/collections" title="Browse Collctions" text="Explore information about all submitted collections to TCIA. This is the best way to get a comprehensive picture of all data types associated with each collection."/>
+          <BigButton icon='search' link="/beam" title="Cohort Builder" text="Build subject cohorts using curated clinical data from across TCIA collections."/>
           <BigButton icon='mri' link="https://www.cancerimagingarchive.net/nbia-search/" title="Search Radiology" text="Use the TCIA Radiology Portal to perform detailed searches across datasets and visualize images before you download them."/>
           <BigButton icon='microscope' link="https://www.cancerimagingarchive.net/histopathology-imaging-on-tcia/" title="Search Histopathology" text="Use the TCIA Histopathology Portal to perform detailed searches and visualize images before you download them."/>
-          <BigButton icon='search' link="/beam" title="Cohort Builder" text="Build subject cohorts using curated clinical data from across TCIA collections."/>
         </div>
 
       </div>
