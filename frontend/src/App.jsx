@@ -12,33 +12,36 @@ import Collection from './Collection';
 import CSVTable from './CSVTable';
 import CohortBuilder from 'cohort-builder';
 import 'cohort-builder/CohortBuilder.css';
+import { ApiFetch, fallbackFetch } from './ApiFetch'
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        <header className="App-header">
-          <Link to="/"><img className="App-logo" src={PrismLogo} alt="PRISM"/></Link>
-          <h3>An alternative view of <a className="App-link" href="https://www.cancerimagingarchive.net/">The Cancer Imaging Archive</a></h3>
-        </header>
-        <Switch>
-          <Route path="/test">
-            <CSVTable file="/csvs/nationwidechildrens.csv" />
-          </Route>
-          <Route path="/collections/:id">
-            <Collection />
-          </Route>
-          <Route path="/collections">
-            <CollectionTable />
-          </Route>
-          <Route path="/beam">
-            <CohortBuilder />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+      <ApiFetch.Provider value={fallbackFetch}>
+        <div className="App">
+          <header className="App-header">
+            <Link to="/"><img className="App-logo" src={PrismLogo} alt="PRISM"/></Link>
+            <h3>An alternative view of <a className="App-link" href="https://www.cancerimagingarchive.net/">The Cancer Imaging Archive</a></h3>
+          </header>
+          <Switch>
+            <Route path="/test">
+              <CSVTable file="/csvs/nationwidechildrens.csv" />
+            </Route>
+            <Route path="/collections/:id">
+              <Collection />
+            </Route>
+            <Route path="/collections">
+              <CollectionTable />
+            </Route>
+            <Route path="/beam">
+              <CohortBuilder />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
       </div>
+      </ApiFetch.Provider>
     </Router>
   );
 }
