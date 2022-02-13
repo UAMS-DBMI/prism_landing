@@ -3255,13 +3255,6 @@ coa@^2.0.2:
     chalk "^2.4.1"
     q "^1.1.2"
 
-cohort-builder@^1.6.2:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/cohort-builder/-/cohort-builder-1.6.2.tgz#6de1d1986b9332d932d2926609b8c0583e36052f"
-  integrity sha512-eFElGSMSiDVMc8QXFdJCGlFrxh8jNIGTdBUx5yndh7GWHYHeAIEDPOTBAh/jX/K24ZEWRrqFZA+54PNPoUPVQQ==
-  dependencies:
-    react-loader-spinner "https://github.com/utecht/react-loader-spinner/releases/download/v5.1.3/react-loader-spinner-5.1.3.tgz"
-
 collect-v8-coverage@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/collect-v8-coverage/-/collect-v8-coverage-1.0.1.tgz#cc2c8e94fc18bbdffe64d6534570c8a673b27f59"
@@ -4287,9 +4280,9 @@ error-ex@^1.3.1:
     is-arrayish "^0.2.1"
 
 error-stack-parser@^2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/error-stack-parser/-/error-stack-parser-2.0.6.tgz#5a99a707bd7a4c58a797902d48d82803ede6aad8"
-  integrity sha512-d51brTeqC+BHlwF0BhPtcYgF5nlzf9ZZ0ZIUQNZpc9ZB9qw5IJ2diTrBY9jlCJkTLITYPjmiX6OWCwH+fuyNgQ==
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/error-stack-parser/-/error-stack-parser-2.0.7.tgz#b0c6e2ce27d0495cf78ad98715e0cad1219abb57"
+  integrity sha512-chLOW0ZGRf4s8raLrDxa5sdkvPec5YdvwbFnqJme4rk0rFajP8mPtrDL1+I+CwrQDCjswDA5sREX7jYQDQs9vA==
   dependencies:
     stackframe "^1.1.1"
 
@@ -8774,6 +8767,14 @@ pretty-format@^27.0.0, pretty-format@^27.5.1:
     ansi-styles "^5.0.0"
     react-is "^17.0.1"
 
+prism-react-components@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/prism-react-components/-/prism-react-components-0.1.2.tgz#2467fc3351ec6f5e0cc22ec32dcd8d33978cfa41"
+  integrity sha512-58bdSLxxJav9HaIufUjNWfLKpsQoqkD+1vmM2dq6ZRhbhDPMARHFfytEzLUxpU5iEJ5NnlfhDSpmisYlAD/hAA==
+  dependencies:
+    prop-types "^15"
+    react-loader-spinner "^5.1.3"
+
 process-nextick-args@~2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
@@ -8817,7 +8818,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -9042,9 +9043,10 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
-"react-loader-spinner@https://github.com/utecht/react-loader-spinner/releases/download/v5.1.3/react-loader-spinner-5.1.3.tgz":
+react-loader-spinner@^5.1.3:
   version "5.1.3"
-  resolved "https://github.com/utecht/react-loader-spinner/releases/download/v5.1.3/react-loader-spinner-5.1.3.tgz#8a10d59b8f5901c32579ef9b5c9484a831f62bcb"
+  resolved "https://registry.yarnpkg.com/react-loader-spinner/-/react-loader-spinner-5.1.3.tgz#fe1dd77be5894b73cdc14b146326403de8311399"
+  integrity sha512-wYDB9wNER7Q3oXBMso/k1ryhTsQdjzvCTWJmiGrVH8bsufwkpVix1C4jiULzthR6YECzaPxFEKR/RQ8JSArhOA==
 
 react-refresh@^0.8.3:
   version "0.8.3"

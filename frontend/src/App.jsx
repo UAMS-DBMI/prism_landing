@@ -10,8 +10,8 @@ import Home from './Home';
 import { CollectionTable } from './CollectionTable';
 import Collection from './Collection';
 import CSVTable from './CSVTable';
-import CohortBuilder from 'cohort-builder';
-import 'cohort-builder/CohortBuilder.css';
+import CohortBuilder from 'prism-react-components/dist/CohortBuilder';
+import 'prism-react-components/dist/CohortBuilder.css';
 import { ApiFetch, fallbackFetch } from './ApiFetch'
 
 function App() {
