@@ -5,11 +5,12 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
-import PrismLogo from './img/prism_logo.png';
-import Home from './Home';
-import CollectionTable from 'prism-react-components/dist/CollectionTable';
-import CohortBuilder from 'prism-react-components/dist/CohortBuilder';
-import CollectionLanding from 'prism-react-components/dist/CollectionLanding';
+import PrismLogo from './img/prism_logo.png'
+import Home from './Home'
+import CollectionTable from 'prism-react-components/dist/CollectionTable'
+import CohortBuilder from 'prism-react-components/dist/CohortBuilder'
+import CollectionLanding from 'prism-react-components/dist/CollectionLanding'
+import FacetBrowser from 'prism-react-components/dist/FacetBrowser'
 import { ApiFetch, fallbackFetch } from './ApiFetch'
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
             </Route>
             <Route path="/beam">
               <CohortBuilder />
+            </Route>
+            <Route path="/facet_browser">
+              <FacetBrowser />
             </Route>
             <Route path="/">
               <Home />
