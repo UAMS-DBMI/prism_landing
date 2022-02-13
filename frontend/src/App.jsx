@@ -23,8 +23,8 @@ function App() {
           </header>
           <Switch>
             <Route path="/collection/:collection_slug"
-                   render={routeProps => (
-                      <CollectionLanding collection_slug={routeProps.collection_slug} />
+                   render={props => (
+                      <CollectionLanding collection_slug={props.match.params.collection_slug} />
                     )}
             />
             <Route path="/collections">
