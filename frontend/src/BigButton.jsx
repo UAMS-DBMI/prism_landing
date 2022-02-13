@@ -16,7 +16,7 @@ export function BigButton(props) {
 	return (
 		<a className="bigbutton" href={props.link}>
 			<img src={icons[props.icon]} alt="Search Icon"/>
-			<h3>{props.title}</h3>
+			<h4>{props.title}</h4>
 			<p>{props.text}</p>
 		</a>
 	);

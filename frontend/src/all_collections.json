@@ -1,8 +1,0 @@
-[
-	{"name": "Test",
-	 "raw_html": "<a href='/'>A Link</a><p>some text</p><h3>big</h3>"
-	},
-	{"name": "Test2",
-	 "raw_html": "<a href='/'>A Link</a><p>some other text</p><h1>bigger</h1>"
-	}
-]
