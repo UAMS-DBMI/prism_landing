@@ -10,6 +10,14 @@ module.exports = function(app) {
     }),
   );
   app.use(
+    '/coreapi',
+    createProxyMiddleware({
+      target: 'http://core-api.apps.dbmi.cloud/v1',
+      pathRewrite: { '^/coreapi': '' },
+      changeOrigin: true,
+    }),
+  );
+  app.use(
     '/api',
     createProxyMiddleware({
       target: 'http://127.0.0.1:8080/v1',
