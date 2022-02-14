@@ -28,12 +28,36 @@ function Home() {
           </Col>
 
           <Col sm={7} className='link-area'>
-            <BigButton icon='folder' link="/collections" title="Browse Collections" text="Explore information about all submitted collections to TCIA. This is the best way to get a comprehensive picture of all data types associated with each collection."/>
-            <BigButton icon='search' link="/beam" title="Cohort Builder" text="Build subject cohorts using curated clinical data from across TCIA collections."/>
-            <BigButton icon='folder' link="/facet_browser" title="Facet Browser" text="Browser files uploaded into the generic data repository facet."/>
-            <BigButton icon='folder' link="/" title="Posda" text="Curate and load DICOM files into PRISM"/>
-            <BigButton icon='mri' link="https://www.cancerimagingarchive.net/nbia-search/" title="Search Radiology" text="Use the TCIA Radiology Portal to perform detailed searches across datasets and visualize images before you download them."/>
-            <BigButton icon='microscope' link="https://www.cancerimagingarchive.net/histopathology-imaging-on-tcia/" title="Search Histopathology" text="Use the TCIA Histopathology Portal to perform detailed searches and visualize images before you download them."/>
+            <BigButton
+              icon='folder'
+              link="/collections"
+              title="Browse Collections"
+              text="Browse and manage file collections in your PRISM"/>
+            <BigButton
+              icon='search'
+              link="/cohort_builder"
+              title="Cohort Builder"
+              text="Build subject cohorts using RDF loaded into the PRISM triplestore"/>
+            <BigButton
+              icon='folder'
+              link="/facet_browser"
+              title="Facet Browser"
+              text="Browser files uploaded into the generic data repository Facet"/>
+            <BigButton
+              icon='mri'
+              link="/"
+              title="Posda"
+              text="Curate and load DICOM files into PRISM"/>
+            <BigButton
+              icon='microscope'
+              link="https://www.cancerimagingarchive.net/histopathology-imaging-on-tcia/"
+              title="PathDB"
+              text="Use the PathDB Histopathology Portal to perform detailed searches and visualize images"/>
+            <BigButton
+              icon='chart'
+              link='/config'
+              title='Configure'
+              text="Configure your PRISM install"/>
           </Col>
 
         </Row>
@@ -44,8 +68,8 @@ function Home() {
           <p>Platform for Imaging in Precision Medicine (PRISM) is a UAMS-centric repository for biomedical image-based software tools.</p>
         </Col>
         <Col className="description-block">
-          <h5>Links</h5>
-          <a href="https://prismtools.dev/">Home</a>
+          <h5>PRISM Links</h5>
+          <a href="https://prismtools.dev/">Project Home</a>
           <a href="https://prismtools.dev/docs/">Documentation</a>
         </Col>
       </Row>

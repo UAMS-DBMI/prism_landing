@@ -11,6 +11,7 @@ import CollectionTable from 'prism-react-components/dist/CollectionTable'
 import CohortBuilder from 'prism-react-components/dist/CohortBuilder'
 import CollectionLanding from 'prism-react-components/dist/CollectionLanding'
 import FacetBrowser from 'prism-react-components/dist/FacetBrowser'
+import SiteConfig from 'prism-react-components/dist/SiteConfig'
 import { ApiFetch, fallbackFetch } from './ApiFetch'
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
     <Router>
       <ApiFetch.Provider value={fallbackFetch}>
         <div className="App">
-          <header className="App-header">
+          <header className="App-header mb-3">
             <Link to="/"><img className="App-logo" src={PrismLogo} alt="PRISM"/></Link>
           </header>
           <Switch>
@@ -30,11 +31,14 @@ function App() {
             <Route path="/collections">
               <CollectionTable />
             </Route>
-            <Route path="/beam">
+            <Route path="/cohort_builder">
               <CohortBuilder />
             </Route>
             <Route path="/facet_browser">
               <FacetBrowser />
+            </Route>
+            <Route path="/config">
+              <SiteConfig />
             </Route>
             <Route path="/">
               <Home />
