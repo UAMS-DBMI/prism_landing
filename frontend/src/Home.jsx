@@ -50,7 +50,7 @@ function Home() {
               text="Curate and load DICOM files into PRISM"/>
             <BigButton
               icon='microscope'
-              link="https://www.cancerimagingarchive.net/histopathology-imaging-on-tcia/"
+              link="http://quip-pathdb-pathdb.apps.dbmi.cloud/"
               title="PathDB"
               text="Use the PathDB Histopathology Portal to perform detailed searches and visualize images"/>
             <BigButton
