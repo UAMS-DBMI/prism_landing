@@ -20,7 +20,6 @@ function App() {
         <div className="App">
           <header className="App-header">
             <Link to="/"><img className="App-logo" src={PrismLogo} alt="PRISM"/></Link>
-            <h5 className="mt-3">An alternative view of <a className="App-link" href="https://www.cancerimagingarchive.net/">The Cancer Imaging Archive</a></h5>
           </header>
           <Switch>
             <Route path="/collection/:collection_slug"
@@ -41,7 +40,7 @@ function App() {
               <Home />
             </Route>
           </Switch>
-      </div>
+        </div>
       </ApiFetch.Provider>
     </Router>
   );

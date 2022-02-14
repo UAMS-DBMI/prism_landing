@@ -53,13 +53,14 @@
   display: flex;
   justify-content: space-between;
   background-color: #e6ebf4;
-  align-self: flex-end;
 }
 
 .description-block {
   flex-grow: 1;
   flex-basis: 10em;
-  margin: 1rem;
+  margin: 3rem !important;
+  display: flex;
+  flex-direction: column;
 }
 
 .undecorated-list {
