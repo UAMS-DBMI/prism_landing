@@ -20,7 +20,7 @@ module.exports = function(app) {
   app.use(
     '/api',
     createProxyMiddleware({
-      target: 'http://127.0.0.1:8080/v1',
+      target: 'http://api-collectionmanager.apps.dbmi.cloud/v1',
       pathRewrite: { '^/api': '' },
       changeOrigin: true,
     })
