@@ -12,13 +12,13 @@ COPY frontend/ .
 RUN yarn build
 
 # Bundle static assets with nginx
-FROM nginx:1.21.0-alpine as production
+FROM bitnami/nginx:latest as production
 ENV NODE_ENV production
 # Copy built assets from builder
-COPY --from=builder /app/build /usr/share/nginx/html
+COPY --from=builder /app/build /app
 # Add your nginx.conf
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-# Expose port
-EXPOSE 80
-# Start nginx
-CMD ["nginx", "-g", "daemon off;"]
+COPY nginx.conf /opt/bitnami/nginx/conf/server_blocks/my_server_block.conf
+
+EXPOSE 8080 8443
+ENTRYPOINT [ "/opt/bitnami/scripts/nginx/entrypoint.sh" ]
+CMD [ "/opt/bitnami/scripts/nginx/run.sh" ]
