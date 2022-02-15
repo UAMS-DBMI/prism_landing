@@ -34,7 +34,6 @@
 .search-area {
   padding: 1em;
   border: 1px #3a4c7114 solid;
-  flex-basis: 60em;
 }
 
 .search-area input {
