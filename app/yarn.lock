@@ -8944,10 +8944,10 @@ pretty-format@^27.0.0, pretty-format@^27.5.1:
     ansi-styles "^5.0.0"
     react-is "^17.0.1"
 
-prism-react-components@^0.1.6:
-  version "0.1.17"
-  resolved "https://registry.yarnpkg.com/prism-react-components/-/prism-react-components-0.1.17.tgz#b15ab1ecbc3aa02a49613520fc5ce75be8abfca5"
-  integrity sha512-vsa0P0ys1h2GFkiArRFASca0ioL27cJ+jSccYKYs7l4mqdE7sCY0Lj6LVjTc3tmipoGC/ApZpWzBYfeHam16Vw==
+prism-react-components@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/prism-react-components/-/prism-react-components-0.2.2.tgz#11f7fd00dac0b357311aefe48477013d162e0d57"
+  integrity sha512-iotlPs+QL/0znmOvErDswT9oTbvyaHoUO7ZN8vi9Qc5maT8k2pNupKYOfr+REkfIWDuXBV2lD/mYdUcg9hMj9g==
   dependencies:
     bootstrap "^5.1.3"
     cornerstone-core "^2.6.1"

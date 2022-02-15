@@ -17,7 +17,7 @@ ENV NODE_ENV production
 # Copy built assets from builder
 COPY --from=builder /app/build /app
 # Add your nginx.conf
-COPY nginx.conf /opt/bitnami/nginx/conf/server_blocks/my_server_block.conf
+# COPY nginx.conf /opt/bitnami/nginx/conf/server_blocks/my_server_block.conf
 
 EXPOSE 8080 8443
 ENTRYPOINT [ "/opt/bitnami/scripts/nginx/entrypoint.sh" ]
