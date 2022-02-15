@@ -3,11 +3,11 @@ ENV NODE_ENV production
 # Add a work directory
 WORKDIR /app
 # Cache and Install dependencies
-COPY frontend/package.json .
-COPY frontend/yarn.lock .
+COPY app/package.json .
+COPY app/yarn.lock .
 RUN yarn install --production
 # Copy app files
-COPY frontend/ .
+COPY app/ .
 # Build the app
 RUN yarn build
 
