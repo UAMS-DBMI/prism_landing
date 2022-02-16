@@ -6,7 +6,8 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-function Home() {
+function Home(props) {
+  const path_db_link = `http://pathdb.${window.location.host}`
   return (
     <div className="frontpage-container">
       <Container className="front-top-container">
@@ -50,7 +51,7 @@ function Home() {
               text="Curate and load DICOM files into PRISM"/>
             <BigButton
               icon='microscope'
-              link="http://quip-pathdb-pathdb.apps.dbmi.cloud/"
+              link={path_db_link}
               title="PathDB"
               text="Use the PathDB Histopathology Portal to perform detailed searches and visualize images"/>
             <BigButton

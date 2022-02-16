@@ -8,6 +8,7 @@ COPY app/yarn.lock .
 RUN yarn install --production
 # Copy app files
 COPY app/ .
+RUN rm -r build/
 # Build the app
 RUN yarn build
 
