@@ -8,6 +8,7 @@ import Col from 'react-bootstrap/Col'
 
 function Home(props) {
   const path_db_link = `http://pathdb.${window.location.host}`
+  const nbia_link = `http://nbia.${window.location.host}/nbia-search`
   return (
     <div className="frontpage-container">
       <Container className="front-top-container">
@@ -47,11 +48,19 @@ function Home(props) {
             <BigButton
               icon='mri'
               link="/"
+              new_tab={true}
               title="Posda"
               text="Curate and load DICOM files into PRISM"/>
             <BigButton
+              icon='mri'
+              link={nbia_link}
+              new_tab={true}
+              title="NBIA"
+              text="Use the NBIA search interface to browse and download radiology DICOM files"/>
+            <BigButton
               icon='microscope'
               link={path_db_link}
+              new_tab={true}
               title="PathDB"
               text="Use the PathDB Histopathology Portal to perform detailed searches and visualize images"/>
             <BigButton

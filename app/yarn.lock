@@ -8949,10 +8949,10 @@ pretty-format@^27.0.0, pretty-format@^27.5.1:
     ansi-styles "^5.0.0"
     react-is "^17.0.1"
 
-prism-react-components@^0.2.3:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/prism-react-components/-/prism-react-components-0.2.3.tgz#f3796c98728c202c41c9eb48f30b44f602c8a08f"
-  integrity sha512-SWcWlYRSclL9oh/RKryWEnBHAFyznzUKyws6EQBH1+IXNw9lYbk9uyMQU5+RPZUg+M2kGv5nP1A4TMJXSTLo8w==
+prism-react-components@^0.2.4:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/prism-react-components/-/prism-react-components-0.2.5.tgz#47da9c7069a2fbd56f8b8fb465ddde217e058aab"
+  integrity sha512-KTMeZc9uSOhnkVsOxbIZrFZmAV1dRxqTCdkGcbayaDrr34ufTu/dn8VjTRN/mwdFCbprbwN2Zjh/18sggAXx0Q==
   dependencies:
     bootstrap "^5.1.3"
     cornerstone-core "^2.6.1"
@@ -9283,9 +9283,9 @@ react-lifecycles-compat@^3.0.4:
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
 react-loader-spinner@^5.1.3:
-  version "5.1.3"
-  resolved "https://registry.yarnpkg.com/react-loader-spinner/-/react-loader-spinner-5.1.3.tgz#fe1dd77be5894b73cdc14b146326403de8311399"
-  integrity sha512-wYDB9wNER7Q3oXBMso/k1ryhTsQdjzvCTWJmiGrVH8bsufwkpVix1C4jiULzthR6YECzaPxFEKR/RQ8JSArhOA==
+  version "5.1.4"
+  resolved "https://registry.yarnpkg.com/react-loader-spinner/-/react-loader-spinner-5.1.4.tgz#1f08e21aa6b721b6c303658a294f4afbf8ad8d05"
+  integrity sha512-qjS/5/+tWX4gPJXdA1LB2HzTHv/CX/2ic+DBLLbacM+S7gVTfS7L7gJ7IOZMzVXETaiItdCUh3f8Y2GoYG5o8Q==
 
 react-refresh@^0.8.3:
   version "0.8.3"

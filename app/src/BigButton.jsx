@@ -13,6 +13,16 @@ export function BigButton(props) {
 		'microscope': Microscope,
 		'mri': MRI
 	};
+	if(props.new_tab){
+		return (
+			<a className="bigbutton" href={props.link} target="_">
+				<img src={icons[props.icon]} alt="Search Icon"/>
+				<h4>{props.title}</h4>
+				<p>{props.text}</p>
+			</a>
+		);
+
+	}
 	return (
 		<a className="bigbutton" href={props.link}>
 			<img src={icons[props.icon]} alt="Search Icon"/>
