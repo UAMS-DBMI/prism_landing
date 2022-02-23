@@ -9,6 +9,7 @@ import Col from 'react-bootstrap/Col'
 function Home(props) {
   const path_db_link = `http://pathdb.${window.location.host}`
   const nbia_link = `http://nbia.${window.location.host}/nbia-search`
+  const posda_link = `http://posda.${window.location.host}`
   return (
     <div className="frontpage-container">
       <Container className="front-top-container">
@@ -47,7 +48,7 @@ function Home(props) {
               text="Browser files uploaded into the generic data repository Facet"/>
             <BigButton
               icon='mri'
-              link="/"
+              link={posda_link}
               new_tab={true}
               title="Posda"
               text="Curate and load DICOM files into PRISM"/>
