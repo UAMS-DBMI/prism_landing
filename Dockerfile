@@ -13,7 +13,7 @@ RUN rm -r build/
 RUN yarn build
 
 # Bundle static assets with nginx
-FROM bitnami/nginx:latest as production
+FROM bitnami/nginx:1.21 as production
 ENV NODE_ENV production
 # Copy built assets from builder
 COPY --from=builder /app/build /app
