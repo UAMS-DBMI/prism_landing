@@ -1,11 +1,7 @@
-.PHONY: run
+default: build
 
-last_update: Dockerfile
+build:
 	docker build -t tcia/prism_landing .
-	touch $@
 
 push:
 	docker push tcia/prism_landing
-
-clean:
-	rm last_update

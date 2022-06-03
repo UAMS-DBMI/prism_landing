@@ -10,6 +10,17 @@ function Home(props) {
   const path_db_link = `http://pathdb.${window.location.host}`
   const nbia_link = `http://nbia.${window.location.host}/nbia-search`
   const posda_link = `http://posda.${window.location.host}`
+  let config = {
+    cohortbuilder: true,
+    posda: true,
+    nbia: true,
+    pathdb: true
+  }
+  if(window.config){
+    config = window.config
+  } else {
+    console.warn("Missing config.js, using defaults")
+  }
   return (
     <div className="frontpage-container">
       <Container className="front-top-container">
@@ -36,40 +47,48 @@ function Home(props) {
               link="/collections"
               title="Browse Collections"
               text="Browse and manage file collections in your PRISM"/>
+          { config.cohortbuilder ? 
             <BigButton
               icon='search'
               link="/cohort_builder"
               title="Cohort Builder"
               text="Build subject cohorts using RDF loaded into the PRISM triplestore"/>
+          : <></> }
             <BigButton
               icon='folder'
               link="/facet_browser"
               title="Facet Browser"
               text="Browser files uploaded into the generic data repository Facet"/>
+          { config.posda ? 
             <BigButton
               icon='mri'
               link={posda_link}
               new_tab={true}
               title="Posda"
               text="Curate and load DICOM files into PRISM"/>
+          : <></> }
+          { config.nbia ? 
             <BigButton
               icon='mri'
               link={nbia_link}
               new_tab={true}
               title="NBIA"
               text="Use the NBIA search interface to browse and download radiology DICOM files"/>
+          : <></> }
+          { config.pathdb ? 
             <BigButton
               icon='microscope'
               link={path_db_link}
               new_tab={true}
               title="PathDB"
               text="Use the PathDB Histopathology Portal to perform detailed searches and visualize images"/>
-            <BigButton
+          : <></> }
+{/*            <BigButton
               icon='chart'
               link='/config'
               title='Configure'
               text="Configure your PRISM install"/>
-          </Col>
+*/}          </Col>
 
         </Row>
       </Container>
